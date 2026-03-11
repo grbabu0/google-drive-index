@@ -1,0 +1,17 @@
+{
+  "name": "google-drive-index",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev dist",
+    "build": "node build.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "db:create": "wrangler d1 create drive-index-db",
+    "db:migrate": "wrangler d1 execute drive-index-db --file=schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0",
+    "esbuild": "^0.19.0",
+    "wrangler": "^3.0.0"
+  }
+}

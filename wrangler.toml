@@ -1,0 +1,8 @@
+name = "google-drive-index"
+compatibility_date = "2026-01-02"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "drive-index-db"
+database_id = "f2f62c48-c93d-452e-9512-65b6e26543e0"
